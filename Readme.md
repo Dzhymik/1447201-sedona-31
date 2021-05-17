@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Dmytro Lahodniuk](https://up.htmlacademy.ru/htmlcss/31/user/1447201).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Григорьев](https://htmlacademy.ru/profile/fuckhtml).
 
 ---
 
