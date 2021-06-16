@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <title>HTML Academy: Sedona</title>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico" type="image/svg+xml" width="32" height="32">
   </head>
 
@@ -26,96 +26,112 @@
         </ul>
       </nav>
 
-      <div class="main-nav__logo" href="index.html">
-        <img src="img/catalog/logotype-desktop.svg" width="187px" height="96px" alt="Логотип онлайн-поиск гостиниц в седоне для туристов">
-      </div>
+        <div class="main-nav__logo" href="index.html">
+          <img src="img/catalog/logotype-desktop.svg" width="187px" height="96px" alt="Логотип онлайн-поиск гостиниц в седоне для туристов">
+        </div>
+      </nav>
+      <div class="intro"><img src="img/main/back-desktop.svg" class="intro__backgroung-photo" width="1200px" height="518px" alt="Илюстрация сервиса Седона"></div>
     </header>
 
-  <main class="catalog-page">
-    <div class="intro"><img src="img/main/back-desktop.svg" class="intro__backgroung-photo" width="1200px" height="518px" alt="Илюстрация сервиса Седона"></div>
-
-    <h2 class="visual-hiden">Каталог</h2>
-
-    <p>Фото и видео</p>
-    <p class="features-title">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-
-    <section class="gallery">
-      <article class="gallery__photos">
-        <ul class="gallery__list">
-          <li class="gallery__item">
-            <img src="img/catalog/photo-1-desktop.svg" class="photo" width="1201px" height="858px" alt="Неродные просторы">
-            <div class="gallery__description">
-              <p class="gallery__img-title">Неродные простоты</p>
-              <p class="gallery__author">Автор фото:Борис</p>
-              <p class="gallery-like">
-                <button>
-                  <span class="visually-hidden">понравилось</span>
-                  <span>1330</span>
-                </button>
-              </p>
+    <main class="page-main">
+      <div class="filters-container">
+        <form action="" class="form">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <p>
+              <input name="infrastructure" id="radio1" type="radio"checked>
+              <label for="radio1">Басейн</label>
+            </p>
+            <p>
+              <input name="infrastructure" id="radio2" type="radio">
+              <label for="radio2">Парковка</label>
+            </p>
+            <p>
+              <input name="infrastructure" id="radio3" type="radio">
+              <label for="radio3">Wi-Fi</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья: </legend>
+            <p>
+              <input name="infrastructure" id="radio4" type="radio" checked>
+              <label for="radio4">Гостиница</label>
+            </p>
+            <p>
+              <input name="infrastructure" id="radio5" type="radio"checked>
+              <label for="radio5">Мотель</label>
+            </p>
+            <p>
+              <input name="infrastructure" id="radio6" type="radio"checked>
+              <label for="radio6">Апартаменты</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки, &#8381</legend>
+            <div class="price-interval">
+              <input class="min-price" type="text" value="от 0">
+              <input class="max-price" type="text" value="до 3000"><br>
+              <progress max="3000" value="2300"></progress><br>
+              <button>Показать</button>
             </div>
+        </form>
+
+      <section>
+        <h2>Найдено:3</h2>
+      </section>
+      <section>
+        <h2>Соритировка:</h2>
+        <ul>
+          <li>
+            <a href="#">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#"> По рейтенгу</a>
           </li>
         </ul>
-        <ul class="gallery__list">
-          <li class="gallery__item">
-            <img src="img/catalog/photo-2-desktop.svg" class="photo" width="400px" height="267px" alt="Местная ростительность">
-            <div class="gallery__description">
-              <p class="gallery__img-title">Местная растительность</p>
-              <p class="gallery__author">Автор фото:Сергей</p>
-              <p class="gallery-like">
-                <button>
-                  <span class="visually-hidden">понравилось</span>
-                  <span>143</span>
-                </button>
-              </p>
-            </div>
+        <ul>
+          <li>
+            <a href="#">По возрастанию</a>
+          </li>
+          <li>
+            <a href="#">По убыванию</a>
           </li>
         </ul>
-        <ul class="gallery__list">
-          <li class="gallery__item">
-            <img src="img/catalog/photo-3-desktop.svg" class="photo" width="400px" height="267px" alt="Дорога на север">
-            <div class="gallery__description">
-              <p class="gallery__img-title">Дорога на север</p>
-              <p class="gallery__author">Автор фото:Петр</p>
-              <p class="gallery-like">
-                <button>
-                  <span class="visually-hidden">понравилось</span>
-                  <span>96</span>
-                </button>
-              </p>
-            </div>
-          </li>
-        </ul>
-        <ul class="gallery__list">
-          <li class="gallery__item">
-            <img src="img/catalog/photo-4-desktop.svg" class="photo" width="400px" height="267px" alt="Мост дьявола">
-            <div class="gallery__description">
-              <p class="gallery__img-title">Мост дьявола</p>
-              <p class="gallery__author">Автор фото:Антон</p>
-              <p class="gallery-like">
-                <button>
-                  <span class="visually-hidden">понравилось</span>
-                  <span>254</span>
-                </button>
-              </p>
-            </div>
-          </li>
-        </ul>
-      </article>
-    </section>
-
-  <section class="video">
-    <p class="video__title">Все еще сомневаетесь?</p>
-    <p class="video__title">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-    <div class="videoplayer"><img src="img/catalog/video-desktop.jpg.svg" class="video__backgroung-photo" width="800px" height="500px" alt="Видеоплеер">Плеер</div>
-  </section>
-  </main>
+      </section>
+      <section>
+        <h2>Гостиницы</h2>
+        <article>
+          <img src="/img/catalog/Amara Resort & Spa.svg" alt="">
+          <h3>Amara Resort & Spa</h3>
+          <p>Гостиница</p>
+          <p>от 4000&#8381 <span class="visually-hidden">Цена</span></p>
+          <a href="">Подробнее</a>
+          <a href="">Забронировать</a>
+        </article>
+        <article>
+          <img src="/img/catalog/Desert Quail Inn.svg" alt="">
+          <h3>Desert Quail Inn</h3>
+          <p>Мотель</p>
+          <p>от 3000&#8381 <span class="visually-hidden">Цена</span></p>
+          <a href="">Подробнее</a>
+          <a href="">Забронировать</a>
+        </article>
+        <article>
+          <img src="/img/catalog/Villas at Poco Diablo.svg" alt="">
+          <h3>Villas at Poco Diablo</h3>
+          <p>Апартаменты</p>
+          <p>от 2000&#8381 <span class="visually-hidden">Цена</span></p>
+          <a href="">Подробнее</a>
+          <a href="">Забронировать</a>
+        </article>
+      </section>
+    </main>
 
     <footer class="main-footer">
-      <p class="main-footer__hash">
-        <a href="" class="main-footer__hash-link">#Visitsedona</a>
-      </p>
-
+      <p class="main-footer__hash"><a href="" class="main-footer__hash-link">#Visitsedona</a></p>
       <ul class="social__list">
         <li class="social__item">
           <a href="" class="social__link">Twitter</a>
@@ -127,7 +143,6 @@
           <a href="" class="social__link">Youtube</a>
         </li>
       </ul>
-
       <p class="main-footer__copyright">Разработано</p>
       <a href="" class="main-footer__copyright-link"></a>
     </footer>

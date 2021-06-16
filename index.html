@@ -3,29 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="favicon.ico" type="image/svg+xml" width="32" height="32">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml" width="32" height="32">
   </head>
 
   <body>
 
     <header class="main-header">
+      <h1 class="visually-hidden">Sedona.com - Онлайн-поиск гостиниц в седоне для туристов</h1>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Информация</a>
+            <a href="#" class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Фото и видео</a>
+            <a href="catalog.html" class="main-nav__link">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Карта штата</a>
+            <a href="form.html" class="main-nav__link">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Гостиницы</a>
+            <a href="" class="main-nav__link">HTML academy</a>
           </li>
         </ul>
-      </nav>
-
         <div class="main-nav__logo" href="index.html">
           <img src="img/catalog/logotype-desktop.svg" width="187px" height="96px" alt="Логотип онлайн-поиск гостиниц в седоне для туристов">
         </div>
@@ -34,82 +33,60 @@
     </header>
 
     <main class="page-main">
-      <div class="filters-container">
-        <form action="">
-          <legend>Инраструктура:</legend>
-            <input type="checkbox">Басейн><br>
-            <input type="checkbox">Парковка<br>
-            <input type="checkbox">Wi-Fi
-        </form>
-        <form action="">
-          <legend>Тип жилья:</legend>
-          <input type="checkbox">Гостиница><br>
-            <input type="checkbox">Мотель<br>
-            <input type="checkbox">Апартаменты
-        </form>
-        <form action="">
-          <legend>Стоимость в сутки, &#8381</legend>
-          <div class="price-controls">
-            <input class="min-price" type="text" value="от 0">
-            <input class="max-price" type="text" value="до 3000"><br>
-            <progress max="3000" value="2300"></progress><br>
-            <button>Показать</button>
-          </div>
-        </form>
-      </div>
+        <section class="features">
+          <h2 class="visual-hiden">Преимущества</h2>
+          <p class="features-title">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
+          <p class="features-intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <ul class="features-list">
+            <li class="features-item">
+              <h3 class="features-item__title">Настоящий городок</h3>
+              <p class="features-item__intro">Седона не аттракцион для туристов,там течет своя жизнь</p>
+            </li>
+            <li class="features-item">
+              <img class="features-item__image" src="img/main/photo-city@1x.svg" width="800px" height="256px" alt="Настоящий городок">
+            </li>
+            <li class="features-item">
+              <h3 class="features-item__title">Жилье</h3>
+              <p class="features-item__intro">Рекомендуем пожить в настроящем отеле, все как в кино!</p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-item__title">Еда</h3>
+              <p class="features-item__intro">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-item__title">Сувениры</h3>
+              <p class="features-item__intro">Не только китайскорого,но иместного производства!</p>
+            </li>
+            <li class="features-item">
+              <img class="features-item__image" src="img/main/photo-bridge@1x.svg" width="800px" height="256px" alt="Мост дьявола">
+            </li>
+            <li class="features-item">
+              <h3 class="features-item__title">Там есть мост дьявола</h3>
+              <p class="features-item__intro">Да, по нему можно пройти!если вы осмелитесь, конечно</p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-item__title">Небольшая площадь</h3>
+              <p class="features-item__intro">Все интересные места находятся очень близко</p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-item__title">Красивая дорога</h3>
+              <p class="features-item__intro">Ехать в седону из лас-вегаса совсем не скучно!</p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-item__title">Мало туристов</h3>
+              <p class="features-item__intro">Большенство едет в гранд каньон и толпится там</p>
+            </li>
+          </ul>
+        </section>
 
-      <section>
-        <h2>Найдено:3</h2>
-      </section>
-      <section>
-        <h2>Соритировка:</h2>
-        <ul>
-          <li>
-            <a href="#">По цене</a>
-          </li>
-          <li>
-            <a href="#">По типу</a>
-          </li>
-          <li>
-            <a href="#"> По рейтенгу</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#">По возрастанию</a>
-          </li>
-          <li>
-            <a href="#">По убыванию</a>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2></h2>
-        <article>
-          <img src="/img/catalog/Amara Resort & Spa.svg" alt="">
-          <h3>Amara Resort & Spa</h3>
-          <p>Гостиница</p>
-          <p>от 4000&#8381</p>
-          <a href="">Подробнее</a>
-          <a href="">Забронировать</a>
-        </article>
-        <article>
-          <img src="/img/catalog/Desert Quail Inn.svg" alt="">
-          <h3>Desert Quail Inn</h3>
-          <p>Мотель</p>
-          <p>от 3000&#8381</p>
-          <a href="">Подробнее</a>
-          <a href="">Забронировать</a>
-        </article>
-        <article>
-          <img src="/img/catalog/Villas at Poco Diablo.svg" alt="">
-          <h3>Villas at Poco Diablo</h3>
-          <p>Апартаменты</p>
-          <p>от 2000&#8381</p>
-          <a href="">Подробнее</a>
-          <a href="">Забронировать</a>
-        </article>
-      </section>
+        <section class="find-booking">
+          <h2 class="visually-hidden">Поиск гостиниц в седоне</h2>
+          <p class="booking__title">Заинтересовались?</p>
+          <p class="booking__intro">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения</p>
+          <a href="" class="booking__button">Насти гостиницу</a>
+          <div class="booking__map"><img src="img/main/map-desktop.svg" class="map__backgroung-photo" width="1200px" height="350px" alt="Карта"></div>
+          <form action="" class="booking_form"></form>
+        </section>
     </main>
 
     <footer class="main-footer">
