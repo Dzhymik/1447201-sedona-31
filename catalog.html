@@ -2,13 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico" type="image/svg+xml" width="32" height="32">
+    <title>HTML Academy: Седона</title>
   </head>
 
-  <body>
+  <body class="page-body">
 
     <header class="main-header">
+      <h1 class="visually-hidden">Sedona.com - Онлайн-поиск гостиниц в седоне для туристов</h1>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -24,13 +27,13 @@
             <a href="#" class="main-nav__link">Гостиницы</a>
           </li>
         </ul>
-      </nav>
-
         <div class="main-nav__logo" href="index.html">
           <img src="img/catalog/logotype-desktop.svg" width="187px" height="96px" alt="Логотип онлайн-поиск гостиниц в седоне для туристов">
         </div>
       </nav>
-      <div class="intro"><img src="img/main/back-desktop.svg" class="intro__backgroung-photo" width="1200px" height="518px" alt="Илюстрация сервиса Седона"></div>
+      <div class="intro">
+        <img src="img/main/illustation.svg" class="intro__background-illustration" alt="Илюстрация приветствия">
+      </div>
     </header>
 
     <main class="page-main">
@@ -39,7 +42,7 @@
           <fieldset>
             <legend>Инфраструктура:</legend>
             <p>
-              <input name="infrastructure" id="radio1" type="radio"checked>
+              <input name="infrastructure" id="radio1" type="radio" checked>
               <label for="radio1">Басейн</label>
             </p>
             <p>
@@ -54,15 +57,15 @@
           <fieldset>
             <legend>Тип жилья: </legend>
             <p>
-              <input name="infrastructure" id="radio4" type="radio" checked>
+              <input name="type" id="radio4" type="radio" checked>
               <label for="radio4">Гостиница</label>
             </p>
             <p>
-              <input name="infrastructure" id="radio5" type="radio"checked>
+              <input name="type" id="radio5" type="radio">
               <label for="radio5">Мотель</label>
             </p>
             <p>
-              <input name="infrastructure" id="radio6" type="radio"checked>
+              <input name="type" id="radio6" type="radio">
               <label for="radio6">Апартаменты</label>
             </p>
           </fieldset>
