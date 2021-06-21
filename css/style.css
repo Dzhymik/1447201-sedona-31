@@ -25,6 +25,7 @@
   --basik-middle-brown: #604E43;
   --basik-extra-brown: #503E33;
   --basik-black: #000000;
+  --basik-light-black: #333333;
   --basik-white: #ffffff;
   --basik-grey: #000000;
   --basik-light-grey: #f2f2f2;
@@ -330,7 +331,115 @@ img {
 }
 
 .main-footer__copyright-link {
+ 
+}
+
+/* Каталог */
+
+.form {
   display: flex;
-  background-color: var(--basik-black);
-  background-image: url(../img/main/logo_htmlacademy.svg);
+  justify-content: space-between;
+  position: relative;
+  width: 1200px;
+}
+
+.filters-form {
+  display: block;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.filters-container {
+  background-image: url(../img/main/back-desktop.svg);
+  background-repeat: no-repeat;
+  
+}
+
+.form-legend  {
+  color: var(--basik-white);
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.infrastructure-lable, .housing-lable {
+  color: var(--basik-white);
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.results {
+  display: block;
+  color: var(--basik-black);
+  font-weight: bold;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+
+}
+
+.breadcrumbs-header {
+  color: var(--basik-black);
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  color: var(--basik-black);
+  opacity: 0.3;
+}
+
+.hotels_card__header {
+  color: var(--basik-black);
+  font-weight: bold;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotels-card__text, .hotels-card__price {
+  color: var(--basik-light-black);
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.hotels-card__details {
+  display: block;
+  width: 110px;
+  height: 27px;
+  background-color: var(--basik-blue);
+  color: var(--basik-white);
+  text-align: center;
+}
+
+.hotels-card__reserve {
+  display: block;
+  width: 142px;
+  height: 27px;
+  background-color: var(--basik-brown);
+  color: var(--basik-white);
+  text-align: center;
+}
+
+.main-footer__logo {
+  fill: black;
+}
+
+.main-footer__logo:hover {
+  fill: red;
 }
