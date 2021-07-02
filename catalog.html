@@ -40,7 +40,7 @@
         <div class="filters-container">
           <form action="" class="form">
             <fieldset class="filters-form">
-              <legend class="form-header">Инфраструктура:</legend>
+              <legend class="infrastructure-header">Инфраструктура:</legend>
               <p>
                 <input class="infrastructure-input" name="infrastructure" id="radio1" type="checkbox" value="swim" checked>
                 <label class="infrastructure-lable"for="radio1">Басейн</label>
@@ -55,22 +55,22 @@
               </p>
             </fieldset>
             <fieldset class="filters-form">
-              <legend class="form-header">Тип жилья: </legend>
+              <legend class="housing-header">Тип жилья: </legend>
               <p>
                 <input class="housing-input" name="housing" id="radio4" type="checkbox" value="hotel" checked>
                 <label class="housing-lable"for="radio4">Гостиница</label>
               </p>
               <p>
-                <input class="housing-input" name="housing" id="radio5" type="checkbox" value="motel">
+                <input class="housing-input" name="housing" id="radio5" type="checkbox" value="hotel" checked>
                 <label class="housing-lable"for="radio5">Мотель</label>
               </p>
               <p>
-                <input class="housing-input" name="housing" id="radio6" type="checkbox" value="apartment">
+                <input class="housing-input" name="housing" id="radio6" type="checkbox" value="apartment" checked>
                 <label class="housing-lable"for="radio6">Апартаменты</label>
               </p>
             </fieldset>
             <fieldset class="filters-form">
-              <legend class="form-legend">Стоимость в сутки, &#8381</legend>
+              <legend class="prise-form__header">Стоимость в сутки, &#8381</legend>
               <div class="price-interval">
                 <input class="min-price" type="number" value="от 0">
                 <input class="max-price" type="number" value="до 3000"><br>
@@ -80,58 +80,59 @@
             <button type="submit">Показать</button>
           </form>
         </div>
-        <section class="results">
-          <h2>Найдено:3</h2>
-        </section>
+
         <section class="sort">
-          <h2 class="sort-header">Соритировка:</h2>
-          <ul class="sort-list sort__list--type1">
-            <li class="sort-item sort__item--type1">
-              <a class="sort-link sort__link--type1" href="#">По цене</a>
+          <span class="results">Найдено:3</span>
+          <h2 class="sort-title">Соритировка:</h2>
+          <ul class="sort-list">
+            <li class="sort-item sort__item--price">
+              <a class="sort-link sort__link--price" href="#">По цене</a>
             </li>
-            <li class="sort-item sort__item--type1">
-              <a class="sort-link sort__link--type1" href="#">По типу</a>
+            <li class="sort-item sort__item--type">
+              <a class="sort-link sort__link--type" href="#">По типу</a>
             </li>
-            <li class="sort-item sort__item--type1">
-              <a class="sort-link sort__link--type1" href="#"> По рейтенгу</a>
+            <li class="sort-item sort__item--rating">
+              <a class="sort-link sort__link--rating" href="#"> По рейтенгу</a>
             </li>
-          </ul>
-          <ul class="sort__list sort__list--type2 ">
-            <!-- Прочитать о БЭМ,
-            сортировать класы(пример в  скайпе)-->
-            <li class="sort__item sort__item--type2">
-              <a class="sort-link sort__link--type2" href="#">По возрастанию</a>
+            <li class="sort__item sort__item--up">
+              <a class="sort-link sort__link--up" href="#"></a>
             </li>
-            <li class="sort-item sort__item--type2">
-              <a class="sort-link sort__link--type2" href="#">По убыванию</a>
+            <li class="sort-item sort__item--down">
+              <a class="sort-link sort__link--down" href="#"></a>
             </li>
           </ul>
         </section>
         <section class="hotels">
-          <h2 class="hotels-header">Гостиницы</h2>
+          <h2 class="visually-hidden">Гостиницы</h2>
           <article class="hotels-card">
-            <img class="hotels-card__image" src="/img/catalog/Amara Resort & Spa.svg" alt="Гостиница: Amara Resort & Spa">
-            <h3 class="hotels_card__header">Amara Resort & Spa</h3>
-            <p class="hotels-card__text">Гостиница</p>
-            <p class="hotels-card__price">от 4000&#8381 <span class="visually-hidden">Цена</span></p>
-            <a class="hotels-card__details" href="">Подробнее</a>
-            <a class="hotels-card__reserve" href="">Забронировать</a>
+            <img class="hotel-card__image" src="/img/catalog/Amara Resort & Spa.svg" alt="Гостиница: Amara Resort & Spa">
+            <h3 class="hotel_card__title">Amara Resort & Spa</h3>
+              <p class="hotel-card__text">Гостиница</p>
+              <p class="hotel-card__price">от 4000 &#8381 <span class="visually-hidden">Цена</span></p>
+            <a class="hotel-card__details" href="">Подробнее</a>
+            <a class="hotel-card__reserve" href="">Забронировать</a>
+            <p class="rating-star raiting__star--four"></p>
+            <p class="raiting">Рейтинг: 8,5</p>
           </article>
-          <article>
-            <img class="hotels-card__image" src="/img/catalog/Desert Quail Inn.svg" alt="Мотель: Desert Quail Inn">
-            <h3 class="hotels_card__header">Desert Quail Inn</h3>
-            <p class="hotels-card__text">Мотель</p>
-            <p class="hotels-card__price">от 3000&#8381 <span class="visually-hidden">Цена</span></p>
-            <a class="hotels-card__details" href="">Подробнее</a>
-            <a class="hotels-card__reserve" href="">Забронировать</a>
+          <article class="hotels-card">
+            <img class="hotel-card__image " src="/img/catalog/Desert Quail Inn.svg" alt="Мотель: Desert Quail Inn">
+            <h3 class="hotel_card__title">Desert Quail Inn</h3>
+            <p class="hotel-card__text">Мотель</p>
+            <p class="hotel-card__price">от 3000 &#8381 <span class="visually-hidden">Цена</span></p>
+            <a class="hotel-card__details" href="">Подробнее</a>
+            <a class="hotel-card__reserve" href="">Забронировать</a>
+            <p class="rating-star raiting__star--three"></p>
+            <p class="raiting">Рейтинг: 8,5</p>
           </article>
-          <article>
-            <img class="hotels-card__image" src="/img/catalog/Villas at Poco Diablo.svg" alt="Апартаменты: Villas at Poco Diablo">
-            <h3 class="hotels_card__header">Villas at Poco Diablo</h3>
-            <p class="hotels-card__text">Апартаменты</p>
-            <p class="hotels-card__price">от 2000&#8381 <span class="visually-hidden">Цена</span></p>
-            <a class="hotels-card__details" href="">Подробнее</a>
-            <a class="hotels-card__reserve" href="">Забронировать</a>
+          <article class="hotels-card">
+            <img class="hotel-card__image" src="/img/catalog/Villas at Poco Diablo.svg" alt="Апартаменты: Villas at Poco Diablo">
+            <h3 class="hotel_card__title">Villas at Poco Diablo</h3>
+            <p class="hotel-card__text">Апартаменты</p>
+            <p class="hotel-card__price">от 2000 &#8381 <span class="visually-hidden">Цена</span></p>
+            <a class="hotel-card__details" href="">Подробнее</a>
+            <a class="hotel-card__reserve" href="">Забронировать</a>
+            <p class="rating-star raiting__star--two"></p>
+            <p class="raiting">Рейтинг: 8,5</p>
           </article>
         </section>
       </main>
