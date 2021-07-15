@@ -42,42 +42,60 @@
             <fieldset class="filters-form">
               <legend class="infrastructure-title">Инфраструктура:</legend>
               <p class="infrastructure-item">
-                <input class="infrastructure-input" name="infrastructure" id="checkbox_1" type="checkbox" value="swim" checked>
-                <label class="infrastructure-label" for="checkbox_1">Басейн</label>
+                <input class="infrastructure-input" name="infrastructure" id="checkbox_swim" type="checkbox" value="swim" checked>
+                <label class="infrastructure-label" for="checkbox_swim">Басейн</label>
               </p>
               <p>
-                <input class="infrastructure-input" name="infrastructure" id="checkbox_1" type="checkbox" value="parking">
-                <label class="infrastructure-label" for="checkbox_1">Парковка</label>
+                <input class="infrastructure-input" name="infrastructure" id="checkbox_parking" type="checkbox" value="parking">
+                <label class="infrastructure-label" for="checkbox_parking">Парковка</label>
               </p>
               <p>
-                <input class="infrastructure-input" name="infrastructure" id="checkbox_1" type="checkbox" value="wi-fi">
-                <label class="infrastructure-label" for="checkbox_1">Wi-Fi</label>
+                <input class="infrastructure-input" name="infrastructure" id="checkbox_wi-fi" type="checkbox" value="wi-fi">
+                <label class="infrastructure-label" for="checkbox_wi-fi">Wi-Fi</label>
               </p>
             </fieldset>
             <fieldset class="filters-form">
-              <legend class="housing-title">Тип жилья: </legend>
+              <legend class="housing-title">Тип жилья:</legend>
               <p>
-                <input class="housing-input" name="housing" id="checkbox_1" type="checkbox" value="hotel" checked>
-                <label class="housing-label" for="checkbox_1">Гостиница</label>
+                <input class="housing-input" name="housing" id="checkbox_hotel" type="checkbox" value="hotel" checked>
+                <label class="housing-label" for="checkbox_hotel">Гостиница</label>
               </p>
               <p>
-                <input class="housing-input" name="housing" id="radio5" type="checkbox" value="hotel" checked>
-                <label class="housing-label" for="checkbox_1">Мотель</label>
+                <input class="housing-input" name="housing" id="checkbox_motel" type="checkbox" value="motel" checked>
+                <label class="housing-label" for="checkbox_motel">Мотель</label>
               </p>
               <p>
-                <input class="housing-input" name="housing" id="radio6" type="checkbox" value="apartment" checked>
-                <label class="housing-label" for="checkbox_1">Апартаменты</label>
+                <input class="housing-input" name="housing" id="checkbox_apartment" type="checkbox" value="apartment" checked>
+                <label class="housing-label" for="checkbox_apartment">Апартаменты</label>
               </p>
             </fieldset>
             <fieldset class="filters-form">
-              <legend class="prise-form__title">Стоимость в сутки, &#8381</legend>
-              <div class="price-interval">
-                <input class="min-price" type="number" value="от 0">
-                <input class="max-price" type="number" value="до 3000"><br>
-                <progress max="3000" value="2700"></progress><br>
+              <legend class="price-form__title">Стоимость в сутки, &#8381</legend>
+              <div class="range-filter">
+              <div class="price-controls">
+                <label class="min-price">
+                  <span class="min-price-span">от</span>
+                  <input class="min-price-input" type="text" name="min-price" value="0" />
+                </label>
+                <label class="max-price">
+                  <span class="max-price-span">до</span>
+                  <input class="max-price-input" type="text" name="max-price" value="3000" />
+                </label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 80%; margin-left: 0"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 0" aria-label="Минимальное значение цены">
+                </div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 79.5%" aria-label="Максимальное значение цены">
+                </div>
+                </div>
+              </div>
+              <div class="show-button">
+                <button class="show" type="submit">Показать</button>
               </div>
             </fieldset>
-            <button type="submit">Показать</button>
           </form>
         </div>
 
@@ -94,13 +112,15 @@
             <li class="sort-item sort__item--rating">
               <a class="sort-link sort__link--rating" href="#"> По рейтенгу</a>
             </li>
-            <li class="sort__item sort__item--up">
-              <a class="sort-link sort__link--up" href="#"></a>
-            </li>
-            <li class="sort-item sort__item--down">
-              <a class="sort-link sort__link--down" href="#"></a>
-            </li>
           </ul>
+          <ul class="catalog-svg-list">
+            <li class="catalog-svg-item">
+              <a class="catalog-svg-link up" href="#" aria-label="перейти по списку вверх"></a>
+            </li>
+            <li class="catalog-svg-item">
+              <a class="catalog-svg-link down active" href="#" aria-label="перейти по списку вниз"></a>
+            </li>
+          </ul> 
         </section>
         <section class="hotels">
           <h2 class="visually-hidden">Гостиницы</h2>
